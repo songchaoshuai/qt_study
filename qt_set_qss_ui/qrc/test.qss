@@ -1,0 +1,80 @@
+QPalette{
+background:#FFFFFF;
+}
+/*所有widget样式设置*/
+QWidget
+{
+font:20px;
+color:rgba(255,255,255,255);
+border:0px solid #126BAE;
+background:rgba(86,87,91,255); 
+}
+
+QPushButton
+{
+border:0px;
+border-radius: 20px;
+font:30px;
+color:rgba(255,255,255,255);
+background:rgba(60,90,232,200);
+}
+
+QLineEdit
+{
+border:0px;
+font:20px;
+color:rgba(0,0,0,255);
+background:rgba(255,255,255,255);
+}
+
+QLabel
+{
+border:0px;
+font:25px;
+color:rgba(255,255,255,255);
+background:rgba(22,97,171,255);
+}
+
+QTabWidget::pane { /* The tab widget frame */
+   background:rgba(86,87,91,100);
+}
+QTabBar::tab:selected {
+   font:20px;
+   background:rgba(86,87,91,200); 
+}
+QTabBar::tab:!selected {
+   font:20px;
+   background:rgba(150,180,175,200);   
+}
+
+/*process item widget*/
+QPushButton#deleteButton,#startButton
+{
+font:25px;
+}
+
+/*Add widget*/
+QWidget#ProcessAddView
+{
+font:20px;
+color:rgba(255,255,255,255);
+border:0px solid #126BAE;
+background:rgba(86,87,91,255); 
+}
+
+QPushButton#processPathButton
+{
+font:20px;
+background:rgba(60,90,232,0);
+}
+QPushButton#okButton:disabled
+{
+background:rgba(60,90,232,100);
+}
+QLabel#processPathLabel,#onbootDelyaLabel,#selfOnbootLabel,#onbootDelayUnitLabel
+{
+border:0px;
+font:20px;
+color:rgba(255,255,255,255);
+background:rgba(60,90,232,0);
+}

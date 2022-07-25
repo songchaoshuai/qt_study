@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>qrc/test.qss</file>
+		<file>qrc/MedbotConfig.ico</file>
+        <file>qrc/MedbotConfig.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+﻿#include <QCoreApplication>
+#include "SharedPointer.h"
+#include <QString>
+int main(int argc, char *argv[])
+{
+    //QCoreApplication a(argc, argv);
+    qDebug()<<"=======================";
+    SharedPointer<QString> t(new QString("123Hello"));
+    t.getCount();
+    SharedPointer<QString> t1=t;
+    t1.getCount();
+    SharedPointer<QString> t2=t;
+    t2.getCount();
+    qDebug()<<(*t2);
+    qDebug()<<"+++++++++++++=======================+++++++++++++++";
+    SharedPointer<int> tt(new int(123));
+    tt.getCount();
+    SharedPointer<int> tt1=tt;
+    (*tt1)=456789;
+    tt1.getCount();
+    qDebug()<<(*tt);
+    qDebug()<<"=======================";
+    SharedPointer<QString> t3=t;
+    t3.getCount();
+    return 0;
+}
